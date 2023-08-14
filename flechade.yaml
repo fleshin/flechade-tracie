@@ -1,0 +1,66 @@
+ver: 0.0.2
+name: tracie
+description: Tracie Progsock - Hardcore programmers environment
+steps:
+- command: CopyFile
+  params:
+  - sources.list
+  - /etc/apt
+  desc: Installing Debian Backport sources
+- command: CopyFile
+  params:
+  - google-chrome.list
+  - /etc/apt/sources.list.d/
+  desc: Google Chrome repo sources
+- command: AddRepoKey
+  params:
+  - https://dl.google.com/linux/linux_signing_key.pub
+  - /etc/apt/keyrings/linux_signing_key.pub
+  desc: Adding Google public keys
+- command: CopyFile
+  params:
+  - vscode.list
+  - /etc/apt/sources.list.d/
+  desc: MS VSCode repo sources
+- command: AddRepoKey
+  params:
+  - https://packages.microsoft.com/keys/microsoft.asc
+  - /etc/apt/keyrings/packages.microsoft.asc
+  desc: Adding MS public keys
+- command: AddArch
+  params:
+  - i386
+  desc: Enabling 32bit packages
+- command: UpdateRepos
+  desc: Updating package repositories
+- command: UpgradePackages
+  desc: Upgrading packages
+- command: EnableFlatpak
+  desc: Enabling Flatpaks
+- command: InstallPackages
+  params:
+  - zsh nala lsd fonts-font-awesome neofetch mc tmux curl plocate libvirt-clients virt-manager sassc dbus-x11 avahi-daemon 
+  desc: Installing system tools
+- command: AssignGroups
+  params:
+  - kvm,libvirt
+  desc: Making user member of virt groups
+- command: InstallPackages
+  params:
+  - git build-essential golang libgl1-mesa-dev xorg-dev libglib2.0-dev-bin
+  desc: Installing basic development env
+- command: EnableAptFile
+  desc: Enabling apt-file
+- command: InstallFlatpaks
+  params:
+  - com.github.tchx84.Flatseal com.usebottles.bottles com.github.wwmm.easyeffects
+    net.davidotek.pupgui2 com.slack.Slack org.gnome.Geary
+  desc: Installing Flatpak apps
+- command: InstallPackages
+  params:
+  - google-chrome-stable
+  desc: Installing Google Chrome
+- command: InstallPackages
+  params:
+  - code
+  desc: Installing VS Code
