@@ -39,7 +39,8 @@ steps:
   desc: Enabling Flatpaks
 - command: InstallPackages
   params:
-  - zsh nala lsd fonts-font-awesome neofetch mc tmux curl plocate libvirt-clients virt-manager sassc dbus-x11 avahi-daemon 
+  - zsh nala lsd fonts-font-awesome neofetch mc tmux curl plocate libvirt-clients virt-manager sassc dbus-x11 avahi-daemon  polybar mpd rofi picom alacritty fish nitrogen
+  bspwm sxhkd polybar rofi dunst nitrogen i3lock redshift cmus ranger
   desc: Installing system tools
 - command: AssignGroups
   params:
@@ -47,7 +48,7 @@ steps:
   desc: Making user member of virt groups
 - command: InstallPackages
   params:
-  - git build-essential golang libgl1-mesa-dev xorg-dev libglib2.0-dev-bin
+  - git build-essential golang libgl1-mesa-dev xorg-dev libglib2.0-dev-bin cmake ninja-build rustc cargo golang neovim nodejs lxc
   desc: Installing basic development env
 - command: EnableAptFile
   desc: Enabling apt-file
@@ -64,3 +65,8 @@ steps:
   params:
   - code
   desc: Installing VS Code
+- command: CloneAndRun
+  params:
+  - https://github.com/ryanoasis/nerd-fonts.git
+  - install.sh --install-to-system-path
+  desc: Installing Nerd fonts
