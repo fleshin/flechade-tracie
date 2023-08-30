@@ -39,7 +39,7 @@ steps:
   desc: Enabling Flatpaks
 - command: InstallPackages
   params:
-  - zsh nala lsd fonts-font-awesome neofetch mc tmux curl plocate libvirt-clients virt-manager sassc dbus-x11 avahi-daemon  polybar mpd rofi picom alacritty fish nitrogen bspwm sxhkd polybar rofi dunst nitrogen i3lock redshift cmus ranger
+  - zsh nala lsd fonts-font-awesome neofetch mc tmux curl plocate libvirt-clients virt-manager sassc dbus-x11 avahi-daemon  polybar mpd rofi picom alacritty fish nitrogen bspwm sxhkd polybar rofi dunst nitrogen i3lock redshift cmus ranger lightdm
   desc: Installing system tools
 - command: AssignGroups
   params:
@@ -69,3 +69,8 @@ steps:
   - https://github.com/ryanoasis/nerd-fonts.git
   - install.sh --install-to-system-path
   desc: Installing Nerd fonts
+- command: InstallUserConfig
+  params:
+  - bspwmrc
+  - .config/bspwm
+  desc: Installing Window Manager settings
