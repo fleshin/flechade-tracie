@@ -73,4 +73,9 @@ steps:
   params:
   - bspwmrc
   - .config/bspwm
-  desc: Installing Window Manager settings
+  desc: Installing Window Manager startup
+- command: InstallUserConfig
+  params:
+  - sxhkdrc
+  - .config/sxhkd
+  desc: Installing Window Manager bindings
