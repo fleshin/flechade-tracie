@@ -39,7 +39,7 @@ steps:
   desc: Enabling Flatpaks
 - command: InstallPackages
   params:
-  - zsh nala lsd fonts-font-awesome neofetch mc tmux curl plocate libvirt-clients virt-manager sassc dbus-x11 avahi-daemon  polybar mpd rofi picom alacritty fish nitrogen bspwm sxhkd polybar rofi dunst nitrogen i3lock redshift cmus ranger lightdm
+  - zsh nala lsd fonts-font-awesome neofetch mc tmux curl plocate libvirt-clients virt-manager sassc dbus-x11 avahi-daemon  polybar mpd rofi picom alacritty fish nitrogen bspwm sxhkd polybar rofi dunst nitrogen i3lock redshift cmus ranger lightdm killall
   desc: Installing system tools
 - command: AssignGroups
   params:
