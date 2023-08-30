@@ -79,3 +79,8 @@ steps:
   - sxhkdrc
   - .config/sxhkd
   desc: Installing Window Manager bindings
+- command: InstallUserConfig
+  params:
+  - alacritty.yml
+  - .config/alacritty
+  desc: Installing Alacritty settings
