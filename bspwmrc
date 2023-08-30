@@ -1,12 +1,12 @@
 #! /bin/sh
 xrandr -s 1920x1080
 pgrep -x sxhkd > /dev/null || sxhkd &
-#compton --backend glx --vsync opengl-swc --inactive-opacity-override &
+
 picom -i 0.7&
 dunst &
-~/.config/polybar/launch.sh --cuts &
-#/usr/lib/xfce-polkit/xfce-polkit &
-nitrogen --restore &
+~/.config/polybar/launch.sh &
+
+#nitrogen --restore &
 
 bspc monitor -d I II III IV V VI VII VIII IX X
 

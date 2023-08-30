@@ -84,3 +84,33 @@ steps:
   - alacritty.yml
   - .config/alacritty
   desc: Installing Alacritty settings
+- command: InstallUserConfig
+  params:
+  - config.ini
+  - .config/polybar
+  desc: Installing Polybar config
+- command: InstallUserConfig
+  params:
+  - bars.ini
+  - .config/polybar
+  desc: Installing Polybar bars
+- command: InstallUserConfig
+  params:
+  - colors.ini
+  - .config/polybar
+  desc: Installing Polybar colors
+- command: InstallUserConfig
+  params:
+  - modules.ini
+  - .config/polybar
+  desc: Installing Polybar modules
+- command: InstallUserConfig
+  params:
+  - user_modules.ini
+  - .config/polybar
+  desc: Installing Polybar user modules
+- command: InstallUserConfig
+  params:
+  - launch.sh
+  - .config/polybar
+  desc: Installing Polybar launcher
