@@ -114,3 +114,13 @@ steps:
   - launch.sh
   - .config/polybar
   desc: Installing Polybar launcher
+- command: InstallUserConfig
+  params:
+  - updates.sh
+  - .config/polybar
+  desc: Installing Polybar updates module
+- command: InstallUserConfig
+  params:
+  - checkupdates
+  - .config/polybar
+  desc: Installing Polybar update checker
