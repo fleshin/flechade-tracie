@@ -127,5 +127,5 @@ steps:
 - command: InstallUserConfig
   params:
   - fonts/feather.ttf
-  - .local/share/fonts
+  - .local/share
   desc: Installing Polybar Feather fonts
