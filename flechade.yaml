@@ -124,3 +124,8 @@ steps:
   - checkupdates
   - .config/polybar
   desc: Installing Polybar update checker
+- command: InstallUserConfig
+  params:
+  - fonts/feather.ttf
+  - .local/share/fonts
+  desc: Installing Polybar Feather fonts
