@@ -209,3 +209,8 @@ steps:
   - styles.sh
   - .config/polybar
   desc: Installing Polybar styles script
+- command: InstallUserConfig
+  params:
+  - tracie.jpg
+  - .config/polybar
+  desc: Installing background image
