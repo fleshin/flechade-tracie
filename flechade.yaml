@@ -191,7 +191,7 @@ steps:
   desc: Installing Polybar power script
 - command: InstallUserConfig
   params:
-  - paywal.sh
+  - pywal.sh
   - .config/polybar
   desc: Installing Polybar paywal script
 - command: InstallUserConfig
