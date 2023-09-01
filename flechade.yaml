@@ -156,7 +156,7 @@ steps:
   desc: Installing Polybar network style
 - command: InstallUserConfig
   params:
-  - power.rasi
+  - powermenu.rasi
   - .config/polybar
   desc: Installing Polybar power style
 - command: InstallUserConfig
