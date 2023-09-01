@@ -129,3 +129,83 @@ steps:
   - fonts/feather.ttf
   - .local/share
   desc: Installing Polybar Feather fonts
+- command: InstallUserConfig
+  params:
+  - colors.rasi
+  - .config/polybar
+  desc: Installing Polybar colors
+- command: InstallUserConfig
+  params:
+  - confirm.rasi
+  - .config/polybar
+  desc: Installing Polybar confirm style
+- command: InstallUserConfig
+  params:
+  - launcher.rasi
+  - .config/polybar
+  desc: Installing Polybar launcher style
+- command: InstallUserConfig
+  params:
+  - message.rasi
+  - .config/polybar
+  desc: Installing Polybar message style
+- command: InstallUserConfig
+  params:
+  - network.rasi
+  - .config/polybar
+  desc: Installing Polybar network style
+- command: InstallUserConfig
+  params:
+  - power.rasi
+  - .config/polybar
+  desc: Installing Polybar power style
+- command: InstallUserConfig
+  params:
+  - styles.rasi
+  - .config/polybar
+  desc: Installing Polybar styles style
+- command: InstallUserConfig
+  params:
+  - color-switch.sh
+  - .config/polybar
+  desc: Installing Polybar switch script
+- command: InstallUserConfig
+  params:
+  - colors-dark.sh
+  - .config/polybar
+  desc: Installing Polybar dark script
+- command: InstallUserConfig
+  params:
+  - colors-light.sh
+  - .config/polybar
+  desc: Installing Polybar light script
+- command: InstallUserConfig
+  params:
+  - launcher.sh
+  - .config/polybar
+  desc: Installing Polybar launcher script
+- command: InstallUserConfig
+  params:
+  - powermenu.sh
+  - .config/polybar
+  desc: Installing Polybar power script
+- command: InstallUserConfig
+  params:
+  - paywal.sh
+  - .config/polybar
+  desc: Installing Polybar paywal script
+- command: InstallUserConfig
+  params:
+  - random.sh
+  - .config/polybar
+  desc: Installing Polybar random script
+- command: InstallUserConfig
+  params:
+  - style-switch.sh
+  - .config/polybar
+  desc: Installing Polybar switch script
+- command: InstallUserConfig
+  params:
+  - styles.sh
+  - .config/polybar
+  desc: Installing Polybar styles script
