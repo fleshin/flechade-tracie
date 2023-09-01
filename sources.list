@@ -1,4 +1,4 @@
-deb http://deb.debian.org/debian/ stable main contrib non-free-firmware non-free
-deb-src http://deb.debian.org/debian/ stable main contrib non-free non-free-firmware
+deb http://deb.debian.org/debian/ unstable main contrib non-free-firmware non-free
+deb-src http://deb.debian.org/debian/ unstable main contrib non-free non-free-firmware
 
-deb http://deb.debian.org/debian bullseye-backports main
+#deb http://deb.debian.org/debian bullseye-backports main
