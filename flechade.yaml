@@ -214,3 +214,8 @@ steps:
   - tracie.jpg
   - .config/polybar
   desc: Installing background image
+- command: InstallUserConfig
+  params:
+  - picom.conf
+  - .config/picom
+  desc: Installing Picom configurations
