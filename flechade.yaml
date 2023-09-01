@@ -151,7 +151,7 @@ steps:
   desc: Installing Polybar message style
 - command: InstallUserConfig
   params:
-  - network.rasi
+  - networkmenu.rasi
   - .config/polybar
   desc: Installing Polybar network style
 - command: InstallUserConfig
