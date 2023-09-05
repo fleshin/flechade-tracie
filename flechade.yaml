@@ -211,7 +211,7 @@ steps:
   desc: Installing Polybar styles script
 - command: InstallUserConfig
   params:
-  - tracie.jpg
+  - tracie.png
   - .config/polybar
   desc: Installing background image
 - command: InstallUserConfig
@@ -219,3 +219,6 @@ steps:
   - picom.conf
   - .config/picom
   desc: Installing Picom configurations
+- command: EnableService
+  - mpd
+  desc: Enabling Music Player Daemon
