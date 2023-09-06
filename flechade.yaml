@@ -220,8 +220,10 @@ steps:
   - .config/picom
   desc: Installing Picom configurations
 - command: EnableService
+  params:
   - mpd
   desc: Enabling Music Player Daemon
 - command: InstallPip
+  params:
   - pywal
   desc: Installing Pywal custom color support
