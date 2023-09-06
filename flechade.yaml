@@ -39,7 +39,7 @@ steps:
   desc: Enabling Flatpaks
 - command: InstallPackages
   params:
-  - zsh nala lsd fonts-font-awesome neofetch mc tmux curl plocate libvirt-clients virt-manager sassc dbus-x11 avahi-daemon  polybar mpd rofi picom alacritty fish nitrogen bspwm sxhkd polybar rofi dunst nitrogen i3lock redshift cmus ranger lightdm psmisc
+  - zsh nala lsd fonts-font-awesome neofetch mc tmux curl plocate libvirt-clients virt-manager sassc dbus-x11 avahi-daemon  polybar mpd rofi picom alacritty fish nitrogen bspwm sxhkd polybar rofi dunst nitrogen i3lock redshift cmus ranger lightdm psmisc python3 python3-pip
   desc: Installing system tools
 - command: AssignGroups
   params:
@@ -222,3 +222,6 @@ steps:
 - command: EnableService
   - mpd
   desc: Enabling Music Player Daemon
+- command: InstallPip
+  - pywal
+  desc: Installing Pywal custom color support
