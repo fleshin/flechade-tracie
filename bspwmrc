@@ -7,6 +7,7 @@ dunst &
 ~/.config/polybar/launch.sh &
 
 nitrogen --set-scaled ~/.config/polybar/tracie.png &
+wal -i ~/.config/polybar/tracie.png &
 
 bspc monitor -d I II III IV V VI VII VIII IX X
 
