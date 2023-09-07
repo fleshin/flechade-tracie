@@ -227,3 +227,13 @@ steps:
   params:
   - pywal
   desc: Installing Pywal custom color support
+- command: CloneAndRun
+  params:
+  - https://github.com/starship/starship.git
+  - install/install.sh -y
+  desc: Installing Starship prompt
+- command: InstallUserConfig
+  params:
+  - starship.toml
+  - .config
+  desc: Installing Starship configuration
