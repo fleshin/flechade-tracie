@@ -237,3 +237,17 @@ steps:
   - starship.toml
   - .config
   desc: Installing Starship configuration
+- command: CreateDir
+  params:
+  - /usr/share/desktop-base/tracie/
+  desc: Creating theme directory 
+- command: CopyFile
+  params:
+  - tracie_blur.png
+  - /usr/share/desktop-base/tracie/
+  desc: Installing login background
+- command: CopyFile
+  params:
+  - lightdm-gtk-greeter.conf
+  - /etc/lightdm
+  desc: Installing login configuration
