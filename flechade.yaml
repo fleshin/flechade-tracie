@@ -251,3 +251,8 @@ steps:
   - lightdm-gtk-greeter.conf
   - /etc/lightdm
   desc: Installing login configuration
+- command: InstallUserConfig
+  params:
+  - .bash_aliases
+  - 
+  desc: Installing bash settings
