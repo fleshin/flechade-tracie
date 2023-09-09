@@ -254,5 +254,5 @@ steps:
 - command: InstallUserConfig
   params:
   - .bash_aliases
-  - 
+  - .
   desc: Installing bash settings
